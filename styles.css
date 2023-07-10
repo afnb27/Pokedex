@@ -1,0 +1,124 @@
+@font-face {
+    font-family: pokemonFont;
+    src: url(ttf/Pokemon\ Hollow.ttf);
+}
+
+body {
+    background-image: url(fondo.jpg);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.header {
+    background: none;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+  }
+  
+
+.header-search{
+    margin: auto;
+    position: relative;
+    width: 70%; 
+}
+
+.header-search form{
+    border-color: #666;
+    display: flexbox;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.header-search input{
+    height: 30px; 
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+  .header input:hover{
+    background-color: rgb(108, 56, 56);
+    color: #222;
+  }
+
+  .header-search form button {
+    width: 80%;
+    height: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer; 
+  }
+
+  
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    width: 230px;
+    padding: 40px;
+    background-color: #FFF8DC;
+    color: #222;
+  text-align: center;
+}
+
+.card:hover {
+    animation: bounce 2s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 180px;
+}
+
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-20px);
+    }
+    40% {
+        transform: translateY(50px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(40);
+    }
+}
+
+
+  
